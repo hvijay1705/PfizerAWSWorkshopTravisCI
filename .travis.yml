@@ -21,6 +21,17 @@ script:
 - ls packaged/
 - cd packaged/
 
+#jobs:
+# include:
+#    - stage: "Tests"                # naming the Tests stage
+#      name: "Unit Tests"            # names the first Tests stage job
+#      script: ./unit-tests
+#    - script: ./integration-tests
+#      name: "Integration Tests"     # names the second Tests stage job
+#    - stage: deploy
+#      name: "Deploy to GCP"
+#      script: ./deploy
+
 notifications:
   email:
     recipients:
